@@ -5,6 +5,7 @@
 <div class="post">
 <h1 class="post-title"><?php the_title(); ?></h1>
 <div class="post-content">
+    <?php the_content(); ?>
 <p>Nombre de Posts : <strong><?php echo wp_count_posts()->publish; ?></strong></p>
 <p>Nombre de Pages : <strong><?php echo wp_count_posts('page')->publish; ?></strong></p>
 <p>Nombre de commentaires publiés : <strong><?php echo wp_count_comments()->approved; ?></strong></p>
