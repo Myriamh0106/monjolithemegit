@@ -2,7 +2,7 @@
 get_header();
 ?>
 <div class="category">
-<h1>Terme de recherche XXXXXX</h1>
+<h1>Catégorie <?php single_cat_title(); ?></h1>
 <?php get_template_part('loop'); ?>
 </div>
 <?php
