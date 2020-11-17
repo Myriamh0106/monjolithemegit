@@ -1,4 +1,12 @@
 <div class="loop">
+
+
+
+<?php query_posts('posts_per_page=2'); ?>
+
+
+
+
 <?php if (have_posts()) : ?>
 <p class="title">
 Hey ! Il y a des Posts !
@@ -10,7 +18,7 @@ Hey ! Il y a des Posts !
 </h3>
 <p class="post-info">
 Posté le <?php the_date(); ?> dans <?php the_category(', ');
-?> par <?php the_author(); ?>.
+?> par <?php the_author(); ?><?php the_tags('Tags:',',','<br/>'); ?>.
 </p>
 <div class="post-content">
 <?php the_content(); ?>
